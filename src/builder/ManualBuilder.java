@@ -11,7 +11,6 @@ public class ManualBuilder implements Builder {
     @Override
     public void reset() {
         manual = new Manual();
-        System.out.println("ManualBuilder reset");
     }
 
     @Override
@@ -35,6 +34,6 @@ public class ManualBuilder implements Builder {
     }
 
     public Manual getResult() {
-        return new Manual();
+        return manual;
     }
 }

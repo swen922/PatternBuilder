@@ -32,4 +32,8 @@ public class Manual {
         this.installGPS = installGPS;
         System.out.println("manual installGPS = " + installGPS);
     }
+
+    public void read() {
+        System.out.println("Shhh-hh-h-h-h-h-h\n");
+    }
 }

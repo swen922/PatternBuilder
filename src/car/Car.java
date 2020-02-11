@@ -33,4 +33,8 @@ public class Car {
         System.out.println("car installGPS = " + installGPS);
 
     }
+
+    public void drive() {
+        System.out.println("wroom-wroom!\n");
+    }
 }

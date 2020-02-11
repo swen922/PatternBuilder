@@ -1,17 +1,27 @@
 import builder.Builder;
 import builder.CarBuilder;
 import builder.ManualBuilder;
+import car.Car;
+import car.Manual;
 
 public class App {
 
-    public void makeSportCar() {
-        Director director = new Director();
-        Builder builder = new CarBuilder();
+    private Director director;
 
-        director.buildSportCar(builder);
+    public static void main(String[] args) {
+        App app = new App();
+        app.director = new Director();
 
-        builder = new ManualBuilder();
-        director.buildSportCar(builder);
+        CarBuilder carBuilder = new CarBuilder();
+        app.director.buildSportCar(carBuilder);
+        Car car = carBuilder.getResult();
+        car.drive();
+
+        ManualBuilder manualBuilder = new ManualBuilder();
+        app.director.buildSportCar(manualBuilder);
+        Manual manual = manualBuilder.getResult();
+        manual.read();
     }
+
 
 }
