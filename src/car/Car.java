@@ -35,6 +35,7 @@ public class Car {
     }
 
     public void drive() {
-        System.out.println("wroom-wroom!\n");
+        this.engine.work();
+        System.out.println("go-go-go!\n");
     }
 }

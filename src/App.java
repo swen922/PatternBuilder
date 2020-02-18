@@ -21,7 +21,14 @@ public class App {
         app.director.buildSportCar(manualBuilder);
         Manual manual = manualBuilder.getResult();
         manual.read();
+
+        app.director.buildOutDoorCar(carBuilder);
+        Car jeep = carBuilder.getResult();
+        jeep.drive();
+
+        app.director.buildGoofCar(carBuilder);
+        Car tesla = carBuilder.getResult();
+        tesla.drive();
+
     }
-
-
 }
