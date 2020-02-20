@@ -4,6 +4,8 @@ import builder.ManualBuilder;
 import car.Car;
 import car.Manual;
 
+/** Строитель, также известен как: Builder */
+
 public class App {
 
     private Director director;
